@@ -1,0 +1,43 @@
+{
+  "name": "Hubitat MQTT Bridge",
+  "version": "latest",
+  "slug": "hubitat_mqtt_bridge",
+  "description": "Hubitat MQTT Bridge from jeubanks/hubitat-mqtt-bridge with minor changes to work as an add-on in atomantium/hubitat-mqtt-bridge.",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "image": "atomantium/hubitat-mqtt-bridge",
+  "startup": "services",
+  "boot": "auto",
+  "hassio_role": "default",
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "ports_description": {
+    "8080/tcp": "Bridge's primary port"
+  },  
+  "options": {
+    "mqtt": {
+      "host": "mqtt",
+      "preface": "hubitat",
+      "username": "",
+      "password": "",
+      "state_read_suffix": "state",
+      "state_write_suffix": "set_state",
+      "command_suffix": "cmd",
+      "retain": false
+    },
+    "port": 8080
+  },
+  "schema": {
+     "mqtt": {
+      "host": "str",
+      "preface": "str",
+      "username": "str",
+      "password": "str",
+      "state_read_suffix": "str",
+      "state_write_suffix": "str",
+      "command_suffix": "str",
+      "retain": "bool"
+    },
+    "port": "port"
+  }
+}
