@@ -1,6 +1,6 @@
 {
   "name": "Hubitat MQTT Bridge",
-  "version": "latest",
+  "version": "0.1",
   "slug": "hubitat_mqtt_bridge",
   "description": "Hubitat MQTT Bridge from jeubanks/hubitat-mqtt-bridge with minor changes to work as an add-on in atomantium/hubitat-mqtt-bridge.",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
