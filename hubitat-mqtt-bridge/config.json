@@ -19,13 +19,8 @@
       "host": "mqtt",
       "preface": "hubitat",
       "username": "",
-      "password": "",
-      "state_read_suffix": "state",
-      "state_write_suffix": "set_state",
-      "command_suffix": "cmd",
-      "retain": false
-    },
-    "port": 8080
+      "password": ""
+    }
   },
   "schema": {
      "mqtt": {
@@ -33,11 +28,11 @@
       "preface": "str",
       "username": "str",
       "password": "str",
-      "state_read_suffix": "str",
-      "state_write_suffix": "str",
-      "command_suffix": "str",
-      "retain": "bool"
+      "state_read_suffix": "str?",
+      "state_write_suffix": "str?",
+      "command_suffix": "str?",
+      "retain": "bool?"
     },
-    "port": "port"
+    "port": "port?"
   }
 }
